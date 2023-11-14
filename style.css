@@ -1,31 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
-    font-family: "Poppins",sans-serif;
+
+* {
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0px;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
 }
-body{
+
+body {
     background: #f8f8f8;
     padding-top: 15px;
     padding-left: 15px;
 
 }
-:root{
-    --gradient:linear-gradient(to right,#e2336b,#fcac46);
+
+:root {
+    --gradient: linear-gradient(to right, #e2336b, #fcac46);
 
 }
 
-.slidebar{
+.slidebar {
     position: fixed;
     width: 300px;
     height: 100vh;
     background: #f8f8f8;
-    z-index: 2;  
+    z-index: 2;
 }
-.main-home{
+
+.main-home {
     position: absolute;
     width: calc(100% - 300px);
     top: 0;
@@ -33,22 +37,23 @@ body{
     background: #fff;
     border-radius: 1rem 0 0 1rem;
     z-index: 1000;
-    
+
 
 }
 
-.logo img{
+.logo img {
     width: 140px;
 }
 
-.profile{
+.profile {
     display: flex;
     flex-direction: column;
     align-items: baseline;
     justify-content: left;
     margin-top: 1.4rem;
 }
-.profile-img{
+
+.profile-img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,59 +63,62 @@ body{
     border: 2px solid #e2336b;
 }
 
-.profile-img img{
+.profile-img img {
     width: 70px;
     height: 70px;
     object-fit: cover;
     border-radius: 50%;
     object-position: center;
 }
-.name{
+
+.name {
     display: flex;
     align-items: center;
     margin: 1rem 0 0 4rem;
 }
-.name h1{
+
+.name h1 {
     font-size: 1.1rem;
 }
-.name img{
+
+.name img {
     margin-left: 4px;
     width: 20px;
     object-fit: center;
 
 }
 
-.profile-img span{
+.profile-img span {
     font-size: 0.938rem;
     font-weight: 400;
 
 }
 
-.about{
+.about {
     display: flex;
     justify-content: left;
     margin-top: 1rem;
 
 }
 
-.box{
+.box {
     text-align: center;
 
 }
 
-.box h3{
+.box h3 {
     font-size: 1rem;
     font-weight: 500;
 
 }
 
-.box span{
+.box span {
     font-size: 0.936rem;
     font-weight: 400;
 
 }
 
-.menu a{
+.menu a {
     width: 100%;
     font-size: 1rem;
     color: #000;
@@ -121,19 +129,19 @@ body{
 }
 
 .menu a:hover,
-.menu .active{
+.menu .active {
     color: #e2336b;
 
 }
 
-.menu .icon{
+.menu .icon {
     margin-right: 1rem;
     font-size: 20px;
 
 }
 
 .menu a:hover::before,
-.menu .active::before{
+.menu .active::before {
     content: "";
     position: absolute;
     right: 0;
@@ -142,17 +150,18 @@ body{
     background: #e2336b;
 }
 
-.main-home{
+.main-home {
     padding: 20px;
     overflow: hidden;
 }
 
-.header{
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.search{
+
+.search {
     display: flex;
     align-items: center;
     background: #f8f8f8;
@@ -161,29 +170,31 @@ body{
     padding: 10px;
     border-radius: 10px;
 }
-.search input{
+
+.search input {
     border: none;
     outline: none;
     background: transparent;
     margin-left: 7px;
 
 }
-.search o{
+
+.search o {
     font-size: 20px;
 }
 
-.header-content{
-      display: flex;
-      align-items: center;
+.header-content {
+    display: flex;
+    align-items: center;
 }
 
-.header-content i{
+.header-content i {
     color: #000;
     font-size: 20px;
     margin-left: 1rem;
 }
 
-.header-content .btn{
+.header-content .btn {
     display: flex;
     align-items: center;
     padding: 10px;
@@ -192,41 +203,46 @@ body{
     margin-left: 1rem;
 }
 
-.header-content .btn i{
-    color: hsla(0,0%,100%,0.6);
+.header-content .btn i {
+    color: hsla(0, 0%, 100%, 0.6);
     margin-left: 10px;
-    
+
 }
 
-.btn{
+.btn {
     color: #fff;
 }
 
 /* Stories */
-.stories-title{
+.stories-title {
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
 }
-.stories-title h1{
+
+.stories-title h1 {
     font-size: 1.8rem;
 }
-.stories-title .btn{
+
+.stories-title .btn {
     display: flex;
     align-items: center;
-    color: #000;   
-} 
-.stories-title .btn i{
+    color: #000;
+}
+
+.stories-title .btn i {
     font-size: 24px;
     margin-right: 10px;
 }
-.stories{
+
+.stories {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 2rem;
 }
-.stories-img{
+
+.stories-img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -235,18 +251,20 @@ body{
     border-radius: 50%;
     border: 2px solid #e2336b;
 }
-.stories-img img{
+
+.stories-img img {
     width: 70px;
     height: 70px;
     object-fit: cover;
     border-radius: 50%;
     object-position: center;
 }
-.stories-img .color{
+
+.stories-img .color {
     border: 2px solid #dbdbdb;
 }
 
-.stories-img .add{
+.stories-img .add {
     position: absolute;
     display: flex;
     align-items: center;
@@ -256,59 +274,61 @@ body{
     height: 70px;
     border-radius: 50%;
     color: #fff;
-    background: hsla(246,100%,67%,0.7);
+    background: hsla(246, 100%, 67%, 0.7);
 }
 
 /* feed */
-.feed{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 1rem;
+.feed {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
 }
 
-.feed h1{
+.feed h1 {
     font-size: 1.7rem;
 }
 
-.feed-text{
+.feed-text {
     display: flex;
     align-items: center;
 }
 
-.feed-text h2{
+.feed-text h2 {
     font-size: 1rem;
     margin-top: 1rem;
 }
 
-.feed-text span{
+.feed-text span {
     font-size: 1rem;
     margin-top: 1rem;
     padding-left: 0.5rem;
 }
 
-.main-post{
+.main-post {
     display: flex;
-    grid-template-columns: repeat(autp-fit,minmax(300px,auto));
+    grid-template-columns: repeat(autp-fit, minmax(300px, auto));
     gap: 11px;
 }
 
-.post-box{
+.post-box {
     width: 300px;
 }
 
-.post-box img{
+.post-box img {
     width: 100%;
     height: 344px;
     object-fit: cover;
     border-radius: 0.5rem;
 }
-.post-info{
+
+.post-info {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.post-img{
+
+.post-img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -316,31 +336,37 @@ body{
     height: 35px;
     border: 2px solid #e2336b;
 }
-.post-img img{
+
+.post-img img {
     width: 27px;
     height: 27px;
     object-fit: cover;
     border-radius: 50%;
     object-position: center;
 }
-.post-profile{
+
+.post-profile {
     display: flex;
     align-items: center;
 }
-.post-profile h3{
+
+.post-profile h3 {
     font-size: 12px;
     font-weight: 600px;
     margin-left: 5px;
 }
-.likes{
+
+.likes {
     display: flex;
     align-items: center;
 }
-.likes i{
+
+.likes i {
     font-size: 20px;
     margin-left: 7px;
 }
-.likes span{
+
+.likes span {
     font-size: 14px;
     margin-left: 7px;
 }
